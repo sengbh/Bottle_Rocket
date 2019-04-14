@@ -11,16 +11,18 @@ import android.widget.LinearLayout
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
+private lateinit var linearLayoutManager: LinearLayoutManager
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(toolbar)
 
-        recycler_view.apply {
-            layoutManager = LinearLayoutManager(this@MainActivity)
-            adapter = ProductAdapter()
-        }
+        linearLayoutManager = LinearLayoutManager(this)
+        recycler_view.layoutManager = linearLayoutManager
+
+
+        setSupportActionBar(toolbar)
     }
 }
