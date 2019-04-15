@@ -1,5 +1,9 @@
 package com.sengbh.bottle_rocket
 
-class ParsingRetrofit {
+import retrofit2.Call
+import retrofit2.http.GET
 
+interface ParsingRetrofit {
+    @GET("stores.json")
+    fun getStore(): Call<Stores>
 }
