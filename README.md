@@ -1,6 +1,8 @@
 # Bottle Rocket Android Developer Test
 
-This project was completed as part of the interview process at Bottle Rocket.
+This document outlines a sample application that we encourage all applicants to
+build and submit for review. Please submit a zip file containing all code so we can
+compile and run the app on devices for testing.
 
 ## Project Prompt
 
@@ -11,6 +13,7 @@ This project was completed as part of the interview process at Bottle Rocket.
 
 ### Requirements
 - Build app using Android Studio, utilizing the latest Android SDK
+- Use Kotlin as much as possible
 - Consume and parse the following data JSON data feed: http://sandbox.bottlerocketapps.com/BR_Android_CodingExam_2015_Server/stores.json using a method of your choice
 - Cache the data using a method of your choice
 - Display a message to the user if a data connection or cache is not available
